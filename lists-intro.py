@@ -18,3 +18,14 @@ lst = list(map(int, input().split()))[:n]
 print(lst)
 lst.append(10)
 print(lst)
+
+# Efficient method - Printing without  []
+n = int(input())
+lst = list(map(int, input().split()))[:n]
+print(lst)
+
+for i in lst: 
+    print(i,end=" ")
+
+# Printing without []
+print(*lst)
