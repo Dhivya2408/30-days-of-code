@@ -1,0 +1,15 @@
+Write a program to find the frequency of a user-given character in a string.
+
+coding:
+
+string = input() 
+character = input() 
+print(string.count(character))
+
+
+output:
+query
+q 
+1
+
+
