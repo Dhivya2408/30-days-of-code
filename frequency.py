@@ -16,3 +16,9 @@ output:
 
 dhivyaaa
 count {'d':1,'h':1,'i':1,'v':1,'y':1,'a':3}
+
+ to print with space:
+
+     
+string, character = map(str, input().split())
+print(string.count(character))
