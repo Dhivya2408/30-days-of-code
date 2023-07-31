@@ -1,0 +1,101 @@
+write a program that generates 50 prime numbers in python:
+
+coding:
+
+def prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+numbers = 50
+primes = [num for num in range(2, 1000) if prime(num)][:numbers]
+
+print("Generated Prime Numbers:")
+print(primes)
+
+
+reverse string without loop or predefined function in python:
+
+
+ coding:
+ def reverse_string(s):
+    return s[::-1]
+
+if __name__ == "__main__":
+    user_input = input("Enter a string: ")
+    reversed_string = reverse_string(user_input)
+    print("Reversed string:", reversed_string)
+
+
+
+create and add a two matrix in python :
+
+coding:
+def get_matrix(rows, columns):
+    return [[int(input(f"Enter element at position ({i + 1}, {j + 1}): ")) 
+    for j in range(columns)] 
+    for i in range(rows)]
+
+if __name__ == "__main__":
+    rows = int(input("Enter the number of rows : "))
+    columns = int(input("Enter the number of columns: "))
+
+    print("Enter elements for the first matrix:")
+    matrix1 = get_matrix(rows, columns)
+
+    print("Enter elements for the second matrix:")
+    matrix2 = get_matrix(rows, columns)
+
+    result_matrix = [[matrix1[i][j] + matrix2[i][j]
+    for j in range(columns)] 
+    for i in range(rows)]
+
+    print("Resultant matrix after addition:")
+    for row in result_matrix:
+        print(row)
+output:
+Enter the number of rows for the matrices: 2
+Enter the number of columns for the matrices: 2
+Enter elements for the first matrix:
+Enter element at position (1, 1): 1
+Enter element at position (1, 2): 2
+Enter element at position (2, 1): 3
+Enter element at position (2, 2): 4
+Enter elements for the second matrix:
+Enter element at position (1, 1): 5
+Enter element at position (1, 2): 6
+Enter element at position (2, 1): 7
+Enter element at position (2, 2): 8
+Resultant matrix after addition:
+[6, 8]
+[10, 12]
+
+count repeated items in string in python by getting user input:
+
+if __name__ == "__main__":
+    int = input("Enter a string: ")
+    char_occurrences = {char: int.count(char) 
+    for char in set(int)}
+
+    print("Character occurrences in the string:")
+    for char, count in char_occurrences.items():
+        print(f"{char}: {count}")
+
+
+output:
+Enter a string: hello
+Character occurrences in the string:
+e: 1
+h: 1
+o: 1
+l: 2
+
+
+
+
+
+
+
