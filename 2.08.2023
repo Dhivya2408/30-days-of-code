@@ -1,0 +1,39 @@
+#create list
+lst = [50, 150, 200, 30,10,5,500,180,280,250]
+
+
+#print minimum
+print(min(lst))
+
+#print minimum
+print(max(lst))
+
+
+#remove first and last element and find the sum of the rest
+temp = lst[1:-1]
+print(temp)
+print(sum(temp))
+
+
+#find the sum of the second costliest and second cheapest
+lst.sort()
+print(lst)
+a=lst[1]
+print(lst[1])
+lst.sort(reverse=True)
+b=lst[1]
+print(lst[1])
+total=a+b
+print(total)
+
+
+output:
+
+5
+500
+[150,200,30,10,5,500,180,280]
+1355
+[5,10,30,50,150,180,200,250,280,500]
+10
+280
+290
