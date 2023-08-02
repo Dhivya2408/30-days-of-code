@@ -26,6 +26,15 @@ print(lst[1])
 total=a+b
 print(total)
 
+#remove four characters from middle and find sum of list
+lst = [50, 150, 200, 30,10,5,500,180,280,250]
+# print(sum(lst))
+# print(sum(lst) - 545)
+midval = len(lst) // 2 
+temp = sum(lst[:midval-2]) 
+temp1 = sum(lst[midval+2:]) 
+print(temp + temp1)
+
 
 output:
 
