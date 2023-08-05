@@ -1,0 +1,11 @@
+
+output:
+
+
+lst = [5,10,15,20,25]  
+lst.sort()
+print("The second largest element of the list is:", lst[-2])  
+
+
+
+
