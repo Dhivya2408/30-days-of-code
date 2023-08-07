@@ -1,0 +1,38 @@
+QUESTIONS:
+
+
+1. Write a program to implement a queue data structure.
+2. Write a program to merge two sorted arrays into a single sorted array.
+3. Write a program to reverse a sentence without reversing the words.
+4. Write a program to find the power of a number using recursion.
+5. Write a program to find the number of occurrences of a given element in an array.
+
+
+OUTPUT:
+
+2)
+a=[10,5,9]
+b=[40,88,78]
+a=a+b
+print(sorted(a))
+
+
+
+3)
+sentence = input("Enter a sentence: ")
+reversed_sentence = " ".join(reversed(sentence.split()))
+print("Reversed Sentence:", reversed_sentence)
+
+4)
+base = float(input("Enter the base number: "))
+exponent = int(input("Enter the exponent: "))
+result = base ** exponent
+print(f"{base} raised to the power of {exponent} is {result}")
+
+5)
+arr = list(map(int, input("Enter the array elements: ").split()))
+target_element = int(input("Enter the element to find occurrences: "))
+occurrences = arr.count(target_element)
+print(f"The element {target_element} appears {occurrences} times in the array.")
+
+
