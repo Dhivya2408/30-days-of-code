@@ -1,0 +1,55 @@
+QUESTIONS:
+
+1. Write a program to find the third largest element in an array.
+2. Write a program to sort an array in descending order using the selection sort algorithm.
+3. Write a program to find the factorial of a number without using recursion.
+4. Write a program to find the LCM (Least Common Multiple) of two numbers.
+5. Write a program to implement a linked list data structure.
+
+
+ANSWERS:
+
+
+1)
+arr = [10, 7, 2, 15, 20, 10, 7, 15]
+if len(arr) < 3:
+    print("Array should have at least three elements.")
+else:
+    unique_elements = sorted(set(arr), reverse=True)
+    if len(unique_elements) < 3:
+        print("Array does not have a third largest element.")
+    else:
+        print("Third largest element:", unique_elements[2])
+
+
+2)
+arr = [64, 34, 25, 12, 22, 11, 90]
+for i in range(len(arr)):
+    max_index = i
+    for j in range(i + 1, len(arr)):
+        if arr[j] > arr[max_index]:
+            max_index = j
+arr[i], arr[max_index] = arr[max_index], arr[i]
+print("Sorted array in descending order:", arr)
+
+
+3)
+number = int(input("Enter a number: "))
+result = 1
+for i in range(1, number + 1):
+    result *= i
+print("Factorial of", number, "is", result)
+
+4)
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+max_num = max(num1, num2)
+while max_num % num1 != 0 or max_num % num2 != 0:
+    max_num += 1
+lcm_result = max_num
+print("LCM of", num1, "and", num2, "is", lcm_result)
+
+5)
+
+
+
